@@ -13,6 +13,7 @@ const Header = (props) => {
         <Link to="/">products</Link>
        <Link to="/Aboutus"> <h1>Aboutus</h1></Link>
        <Link to ="/Home">Home</Link>
+       <Link to="/ContactNavigation">Contactus</Link>
         <HeaderCartButton onclick ={props.setcart} />
       </header>
       <div className={classes['main-image']}>

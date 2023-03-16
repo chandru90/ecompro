@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import MoviesList from './MoviesList';
 import AddMovie from './AddMovie';
+import Header from './components/Layout/Header';
 
 const Home=()=>{
     const [movies, setMovies] = useState([]);
@@ -69,6 +70,7 @@ const Home=()=>{
 
   return (
     <React.Fragment>
+      <Header/>
       <section>
         <AddMovie onAddMovie={addMovieHandler} />
       </section>
